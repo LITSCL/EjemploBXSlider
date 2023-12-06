@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bxslider-4.2.15/jquery.bxslider.min.css">
+    <script type="text/javascript" src="vendor/jquery-3.5.0/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="vendor/bxslider-4.2.15/jquery.bxslider.min.js"></script>
+    <title>Document</title>
+    <style>
+        #slider {
+            width: 100%;
+        }
+
+        .bxslider img {
+            height: 495px;
+            width: 100%;
+        }
+
+        .bx-wrapper, .bx-viewport {
+            height: 495px !important;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    $(document).ready(function() {
+        $(".bxslider").bxSlider({
+            auto: true,
+            mode: "fade",
+            captions: true,
+            pager: false
+        });
+    });
+</script>
+
+<div id="slider">
+    <div class="bxslider">
+        <div><img src="img/verde.jpg" title="Verde"></div>
+        <div><img src="img/rojo.jpg" title="Rojo"></div>
+        <div><img src="img/azul.jpg" title="Azul"></div>
+    </div>
+</div>
+
+</body>
+</html>
